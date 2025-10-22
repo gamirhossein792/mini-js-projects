@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Password Validation</title>
+  </head>
+  <body>
+    <main>
+      <h1>Register now</h1>
+      <form id="myForm">
+        <label for="email">Email</label>
+        <input type="email" id="email" />
+        <label for="password">Password</label>
+        <input type="password" id="password" />
+        <button class="register">Register</button>
+      </form>
+    </main>
+    <div id="error" class="alert"></div>
+    <div id="error-lowercase" class="alert"></div>
+    <div id="error-uppercase" class="alert"></div>
+    <div id="error-number" class="alert"></div>
+    <div id="error-length" class="alert"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

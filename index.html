@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div>
+        <h1>Multiplication Table Generator</h1>
+        <h4>
+          (get the table of any number simply by typing the number itself and
+          the range)
+        </h4>
+        <input type="text" class="number" placeholder="number" id="number" />
+        <input type="text" class="range" placeholder="range" id="range" />
+        <span
+          >The maximum value in the range is 100, as larger values ​​can crash
+          your browser.</span
+        >
+        <button onclick="getTable()">get table</button>
+      </div>
+      <div class="show">
+        <ul id="myTable"></ul>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

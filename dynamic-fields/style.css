@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c1cce0;
+}
+
+.form-section {
+  width: 400px;
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 30px;
+}
+
+.form-section form , #dynamicField {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input  {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #00000020;
+  margin: 5px 0;
+  width: 300px;
+}
+
+.submit-btn {
+  border: 1px solid #00000080;
+  font-weight: 600;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px;
+  border: 1px solid #00000080;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button-sec {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}

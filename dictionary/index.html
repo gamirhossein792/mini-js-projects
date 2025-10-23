@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Word Defination</h1>
+        <div class="search-box">
+          <input
+            type="text"
+            placeholder="Search here..."
+            class="search-input"
+            id="searchInput"
+            title="please fill out this field"
+            oninput="showButton()"
+          />
+          <button id="closeBtn" class="hidden" onclick="hiddenBtn()">
+            close
+          </button>
+        </div>
+        <!-- <button id="searchbutton">search</button> -->
+        <div class="word" id="wordsection">
+          <!-- <div class="left">
+            <p>test</p>
+            <span>noun /undefined/</span>
+          </div>
+        </div>
+        <div class="meaning">
+          <p>Meaning</p>
+          <span>Lorem ipsum dolor sit amet.</span> -->
+        </div>
+      </section>
+      <div id="result"></div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="slug-generator">
+        <h1>Slug Generator</h1>
+        <h3>Generate a slug from post title:</h3>
+        <input
+          type="text"
+          placeholder="The title needs slug"
+          class="slug-input"
+          id="slugInput"
+        />
+        <button class="generate-btn" onclick="slugGenerate()">Generate</button>
+        <div class="show-slug hidden" id="showSlug">
+          <input type="text" class="slug-output" id="slugOutput" />
+          <button class="copy-btn" id="copyBtn" onclick="copyToClipboard()">
+            Copy
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        width: 100px;
+        color: #fff;
+        background-color: #222;
+        /* transition: background-color 2s ease; */
+        transition: background-color 2s ease;
+      }
+      #mybutton.active {
+        background-color: #444;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="myinput" placeholder="hello" value="hello" />
+    <button id="mybutton" onclick="myFunc()">copy</button>
+    <script>
+      document
+        .getElementById("mybutton")
+        .addEventListener("click", function () {
+          const button = this;
+          button.className = "active";
+          const orginalText = button.innerText;
+          button.innerText = "copied";
+
+          setTimeout(function () {
+            button.classList.remove("active");
+            button.innerText = orginalText;
+          }, 2000);
+        });
+      function myFunc() {
+        var myinput = document.getElementById("myinput");
+        myinput.select();
+        navigator.clipboard.writeText(myinput.value);
+      }
+    </script>
+  </body>
+</html>

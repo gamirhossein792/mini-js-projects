@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+section {
+  margin: 0.5em;
+  padding: 1.4em;
+  min-width: 400px;
+  max-height: 85px;
+  border-radius: 1em;
+  background-color: #e9eeec;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section .right,
+section .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .left > *,
+section .right > * {
+  margin: 0 0.5em;
+}
+
+section .right span {
+  font-size: 1.5rem;
+  color: #029a49;
+  font-weight: 500;
+  text-wrap: unset;
+}
+
+section .right .offer {
+  display: inline-block;
+  min-width: fit-content;
+  min-height: fit-content;
+  border-radius: 1em;
+  padding: 8px 5px;
+  background-color: #029a49;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+section .left > div {
+  position: relative;
+}
+
+section .left > div > span {
+  border-radius: 1em;
+  font-size: 0.8em;
+  width: 40px;
+  position: absolute;
+  right: -5px;
+  bottom: 0;
+  background-color: #d32f2f;
+  color: #fff;
+  text-align: center;
+}
+
+section .left > div > img {
+  border-radius: 2em;
+  width: 58px;
+  height: 58px;
+}
+
+.left > div:nth-child(7) > span:nth-child(1) {
+  position: relative;
+}
+
+.left > div:nth-child(7) {
+  min-width: fit-content;
+  padding: 7px 14px;
+  border-radius: 1.5em;
+  background-color: #d32f2f;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .left > div:nth-child(6),
+  .left > div:nth-child(5) {
+    display: none;
+  }
+  section .left > *,
+  section .right > * {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .left > div:nth-child(4),
+  .left > div:nth-child(3) {
+    display: none;
+  }
+
+  .right > img {
+    display: none;
+  }
+  .right > span:nth-child(2) {
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+  section .right .offer {
+    display: none;
+  }
+  .left > div:nth-child(2) {
+    display: none;
+  }
+}

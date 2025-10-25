@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+section {
+  display: flex;
+  gap: 15px;
+  padding: 1em;
+  max-width: 1000;
+  background-color: #ececec;
+}
+
+section > div {
+  display: flex;
+  flex: 1 1 20%;
+  position: relative;
+  border-radius: 15px;
+  background-color: #ececec;
+  padding: 8px;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+  min-width: 230px;
+}
+
+section > div > img {
+  transition: transform 0.5s ease;
+  width: 100%;
+  border: 1px solid #c1c1c19e;
+  border-radius: 10px;
+}
+
+section > div > span:nth-child(2) {
+  color: #d2bf1e;
+}
+
+section > div > span {
+  padding: 8px;
+}
+
+section > div > span:nth-child(3) {
+  text-align: right;
+}
+
+section > div > span:nth-child(4) {
+  text-align: left;
+}
+
+section > div > div > .add-product-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  color: white;
+  background: linear-gradient(to right, #517fa4 0%, #243949 51%, #517fa4 100%);
+  background-size: 200% auto;
+  background-position: left center;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-position 0.5s ease;
+  text-decoration: none;
+}
+
+section > div:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.add-product-btn:hover {
+  background-position: right center;
+}
+
+section > div:hover .hover-buttons {
+  opacity: 1;
+}
+
+section > div > .hover-buttons {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+section > div > .hover-buttons > a {
+  background-color: #009294;
+  border-radius: 6px;
+  padding: 6px 12px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transform: translateX(20px);
+  transition:  transform 0.3s ease;
+}
+
+section > div:hover .hover-buttons a {
+  transform: translateX(0px);
+}

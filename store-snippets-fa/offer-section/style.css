@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+/* بخش کروسل */
+
+section {
+  height: 300px;
+  position: relative;
+  margin: 0.5em;
+  padding: 1.5em 0.2em;
+  border-radius: 1em;
+  display: flex;
+  gap: 3px;
+  background-color: #5c51bf;
+  /* flex-wrap: wrap; */
+}
+
+/* بخش پیشنهاد شگفت انگیز */
+
+section:nth-child(1) > div > div > p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* بخش پیشنهاد - مشاهده همه*/
+
+section:nth-child(1) > div:nth-child(1) > div:nth-child(3) {
+  text-align: center;
+  font-weight: 500;
+}
+
+/* رنگ  */
+
+section:nth-child(1) > div:nth-child(1) {
+  color: #fff;
+}
+
+/* تقسیم محصولات */
+
+section > div {
+  /* flex: 1; */
+  /* flex: 0 0 calc(100% / 7 - 10px); */
+}
+
+section > div > img {
+  width: 80%;
+}
+
+section > *:not(:first-child) {
+  background-color: #fff;
+}
+
+/* بوردر ردیوس سمت راست محصول اول  */
+
+section:nth-child(1) > div:nth-child(2) {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+section:nth-child(1) > div:nth-child(2) > img {
+  border-top-right-radius: 5px;
+}
+
+section:nth-child(1) > *:not(:first-child) {
+  text-align: center;
+}
+
+section:nth-child(1) > *:not(:first-child) > div:nth-child(1) {
+  color: red;
+}
+section:nth-child(1)
+  > *:not(:first-child)
+  > div:nth-child(2)
+  > span:nth-child(3) {
+  font-size: 12px;
+}
+
+section > div:not(:first-child) > * > span:nth-child(1) {
+  font-size: 13px;
+  padding: 0 6px;
+  border-radius: 10px;
+  background-color: #d32f2f;
+  color: #fff;
+}
+
+section > div:not(:first-child) > p {
+  font-size: 14px;
+  text-decoration: line-through;
+  opacity: 50%;
+}
+
+section:nth-child(1) > button {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  padding: 4px 8px;
+  border-radius: 1em;
+  border: 1px solid #33333350;
+  color: #333333;
+  background-color: #99999980;
+  transform: translateY(-50%);
+}
+
+section > div:not(:first-child) > * {
+  padding: 10px;
+}
